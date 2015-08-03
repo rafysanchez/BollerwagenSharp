@@ -66,6 +66,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="c_GPIO.cs" />
+    <Compile Include="c_UCC.cs" />
     <Compile Include="GUI.cs">
       <SubType>Form</SubType>
     </Compile>

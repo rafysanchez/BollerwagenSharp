@@ -11,12 +11,12 @@ namespace BollerwagenSharp
 {
     public partial class GUI : Form
     {
-        c_GPIO GPIO;
+        c_UCC UCC;
         
         public GUI()
         {
             InitializeComponent();
-            GPIO = new c_GPIO();
+            UCC = new c_UCC();
         }
 
         private void GUI_Load(object sender, EventArgs e)
@@ -26,19 +26,25 @@ namespace BollerwagenSharp
             //this.Bounds = Screen.PrimaryScreen.Bounds; // Formulargröße auf Größe des Bildschirms festlegen
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_an_Click(object sender, EventArgs e)
         {
-            button1.Text = GPIO.schalter();
+            UCC.An();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_aus_Click(object sender, EventArgs e)
         {
-            GPIO.an();
+            UCC.Aus();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        public void SchalterAn()
         {
-            GPIO.aus();
+            lbl_switch.Text = "AN";
+            lbl_switch.ForeColor = Color.Green;
+        }
+        public void SchalterAus()
+        {
+            lbl_switch.Text = "Aus";
+            lbl_switch.ForeColor = Color.Red;
         }
 
 

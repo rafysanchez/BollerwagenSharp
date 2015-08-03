@@ -9,11 +9,11 @@ namespace BollerwagenSharp
 {
     class c_GPIO
     {
-        private enum IN : byte
+        public enum IN : byte
         {
             GPIO24 = 24
         };
-        private enum OUT : byte
+        public enum OUT : byte
         {
             GPIO17 = 17
         };
@@ -26,10 +26,11 @@ namespace BollerwagenSharp
 
         public c_GPIO()
         {
+            
             InitializeGPIO();
         }
 
-        ~c_GPIO() 
+        ~c_GPIO()
         {
             //GPIO freigeben
             in_gpio24.Dispose();
@@ -41,11 +42,19 @@ namespace BollerwagenSharp
         public void InitializeGPIO()
         {
             //IN
-            in_gpio24 = new GPIOMem(GPIOPins.V2_GPIO_24, GPIODirection.In, false);
+            if (new GPIOMem(GPIOPins.V2_GPIO_24).IsDisposed)
+            {
+                in_gpio24 = new GPIOMem(GPIOPins.V2_GPIO_24, GPIODirection.In);
+            }
+            else 
+            {
 
-            //Out
-            out_gpio17 = new GPIOMem(GPIOPins.V2_GPIO_17, GPIODirection.Out, false);
-         }
+            }
+            
+
+            //Out#
+            out_gpio17 = new GPIOMem(GPIOPins.V2_GPIO_17);
+        }
 
         //Testen ob Schalter geschlossen ist
         public bool CheckInput(IN GPIO_Pin)
@@ -62,14 +71,14 @@ namespace BollerwagenSharp
             {
                 return true;
             }
-            else 
+            else
             {
                 return false;
             }
         }
 
         //Outputs schalten
-        public bool SwitchOutout(OUT GPIO_Pin, PinState State)
+        public bool SwitchOut(OUT GPIO_Pin, bool Closed)
         {
             GPIOMem Output;
             switch (GPIO_Pin)
@@ -79,9 +88,8 @@ namespace BollerwagenSharp
                 default:
                     return false;
             }
-            Output.Write(State);
+            Output.Write(Closed);
             return true;
         }
     }
-    
 }

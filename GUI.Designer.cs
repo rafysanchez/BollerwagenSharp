@@ -28,61 +28,60 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btn_aus = new System.Windows.Forms.Button();
+            this.btn_an = new System.Windows.Forms.Button();
+            this.lbl_switch = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // btn_aus
             // 
-            this.button1.Location = new System.Drawing.Point(12, 12);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(132, 75);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "schalter";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btn_aus.Location = new System.Drawing.Point(150, 93);
+            this.btn_aus.Name = "btn_aus";
+            this.btn_aus.Size = new System.Drawing.Size(132, 75);
+            this.btn_aus.TabIndex = 1;
+            this.btn_aus.Text = "aus";
+            this.btn_aus.UseVisualStyleBackColor = true;
+            this.btn_aus.Click += new System.EventHandler(this.btn_aus_Click);
             // 
-            // button2
+            // btn_an
             // 
-            this.button2.Location = new System.Drawing.Point(150, 93);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(132, 75);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "aus";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btn_an.Location = new System.Drawing.Point(150, 12);
+            this.btn_an.Name = "btn_an";
+            this.btn_an.Size = new System.Drawing.Size(132, 75);
+            this.btn_an.TabIndex = 2;
+            this.btn_an.Text = "an";
+            this.btn_an.UseVisualStyleBackColor = true;
+            this.btn_an.Click += new System.EventHandler(this.btn_an_Click);
             // 
-            // button3
+            // lbl_switch
             // 
-            this.button3.Location = new System.Drawing.Point(150, 12);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(132, 75);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "an";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.lbl_switch.AutoSize = true;
+            this.lbl_switch.Location = new System.Drawing.Point(49, 51);
+            this.lbl_switch.Name = "lbl_switch";
+            this.lbl_switch.Size = new System.Drawing.Size(0, 13);
+            this.lbl_switch.TabIndex = 3;
             // 
             // GUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(433, 405);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.lbl_switch);
+            this.Controls.Add(this.btn_an);
+            this.Controls.Add(this.btn_aus);
             this.Name = "GUI";
             this.Text = "BollerwagenSharp";
             this.Load += new System.EventHandler(this.GUI_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button btn_aus;
+        private System.Windows.Forms.Button btn_an;
+        private System.Windows.Forms.Label lbl_switch;
 
     }
 }
