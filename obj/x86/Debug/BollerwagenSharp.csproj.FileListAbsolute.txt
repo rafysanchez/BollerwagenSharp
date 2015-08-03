@@ -1,0 +1,18 @@
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\bin\Debug\BollerwagenSharp.exe
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\bin\Debug\BollerwagenSharp.pdb
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.Properties.Resources.resources
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.csproj.GenerateResource.Cache
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.exe
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.pdb
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\bin\Debug\RaspberryPiDotNet.dll
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.csprojResolveAssemblyReference.cache
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.GUI.resources
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\bin\Debug\BollerwagenSharp.exe
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\bin\Debug\BollerwagenSharp.pdb
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\bin\Debug\RaspberryPiDotNet.dll
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.csprojResolveAssemblyReference.cache
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.GUI.resources
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.Properties.Resources.resources
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.csproj.GenerateResource.Cache
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.exe
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\obj\x86\Debug\BollerwagenSharp.pdb

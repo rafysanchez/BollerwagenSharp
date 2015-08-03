@@ -1,0 +1,10 @@
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\bin\Release\BollerwagenSharp.exe
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\bin\Release\BollerwagenSharp.pdb
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\bin\Release\RaspberryPiDotNet.dll
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Release\BollerwagenSharp.GUI.resources
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Release\BollerwagenSharp.Properties.Resources.resources
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Release\BollerwagenSharp.csproj.GenerateResource.Cache
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Release\BollerwagenSharp.exe
+C:\Users\Nikolas\AppData\Local\Temporary Projects\BollerwagenSharp\obj\x86\Release\BollerwagenSharp.pdb
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\obj\x86\Release\BollerwagenSharp.exe
+D:\Dokumente\Pi\Bollerwagen\Bollerwagen\BollerwagenSharp\BollerwagenSharp\BollerwagenSharp\obj\x86\Release\BollerwagenSharp.pdb
