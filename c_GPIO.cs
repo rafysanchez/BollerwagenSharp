@@ -9,70 +9,78 @@ namespace BollerwagenSharp
 {
     class c_GPIO
     {
-        private GPIOMem gpio17;
-        private GPIOMem gpio24;
-        int i = 0;
+        private enum IN : byte
+        {
+            GPIO24 = 24
+        };
+        private enum OUT : byte
+        {
+            GPIO17 = 17
+        };
+
+        //GPIO IN
+        private GPIOMem in_gpio24;
+
+        //GPIO OUT
+        private GPIOMem out_gpio17;
 
         public c_GPIO()
         {
-
-
+            InitializeGPIO();
         }
 
         ~c_GPIO() 
         {
+            //GPIO freigeben
+            in_gpio24.Dispose();
+
+            out_gpio17.Dispose();
         }
 
 
-        public string schalter()
+        public void InitializeGPIO()
         {
-            if (gpio24 == null)
-            {
-                gpio24 = new GPIOMem(GPIOPins.V2_GPIO_24);
-                gpio24.PinDirection = GPIODirection.In;
-            }
-            return gpio24.Read().ToString();
+            //IN
+            in_gpio24 = new GPIOMem(GPIOPins.V2_GPIO_24, GPIODirection.In, false);
+
+            //Out
+            out_gpio17 = new GPIOMem(GPIOPins.V2_GPIO_17, GPIODirection.Out, false);
          }
 
-        public void an()
+        //Testen ob Schalter geschlossen ist
+        public bool CheckInput(IN GPIO_Pin)
         {
-            if (gpio17 == null)
+            GPIOMem Input;
+            switch (GPIO_Pin)
             {
-                gpio17 = new GPIOMem(GPIOPins.V2_GPIO_17);
+                case IN.GPIO24: Input = in_gpio24;
+                    break;
+                default:
+                    return false;
             }
-            gpio17.Write(PinState.High);
-
+            if (Input.Read() == PinState.High)
+            {
+                return true;
+            }
+            else 
+            {
+                return false;
+            }
         }
 
-        public void aus()
+        //Outputs schalten
+        public bool SwitchOutout(OUT GPIO_Pin, PinState State)
         {
-            if (gpio17 == null)
+            GPIOMem Output;
+            switch (GPIO_Pin)
             {
-                gpio17 = new GPIOMem(GPIOPins.V2_GPIO_17);
-            }
-            gpio17.Write(PinState.Low);
-        }
-
-        public void test()
-        {
-            GPIOMem test;
-
-            switch (i)
-            {
-                case 0: test = new GPIOMem(GPIOPins.GPIO_17);
-                    test.Write(PinState.High);
-                    test.Dispose();
+                case OUT.GPIO17: Output = out_gpio17;
                     break;
-                case 2: test = new GPIOMem(GPIOPins.V2_GPIO_17);
-                    test.Write(PinState.High);
-                    test.Dispose();
-                    break;
-               
-
+                default:
+                    return false;
             }
-            
-                
-        
+            Output.Write(State);
+            return true;
         }
     }
     
